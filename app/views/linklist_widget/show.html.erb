@@ -1,0 +1,9 @@
+<ul>
+  <% widget.links.each do |link| %>
+    <% if widget.show_as_css == "Yes" %>
+      <li class="<%= link.title %>"><%= link_to "", link.url %></li>
+    <% else %>
+      <li><%= link_to link.title, link.url %></li>
+    <% end %>
+  <% end %>
+</ul>
