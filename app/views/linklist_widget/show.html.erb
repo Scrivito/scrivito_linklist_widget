@@ -3,7 +3,11 @@
     <% if widget.show_as_css == "Yes" %>
       <li class="<%= link.title %>"><%= link_to "", link.url %></li>
     <% else %>
-      <li><%= link_to link.title, link.url %></li>
+      <% if link.url %>
+        <li><%= link_to link.title, link.url %></li>
+      <% else %>
+        <li><%= link.title %></li>
+      <% end %>
     <% end %>
   <% end %>
 </ul>
