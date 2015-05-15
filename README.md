@@ -7,14 +7,8 @@ A Widget for Scrivito where a space between two widgets can be set by an editor.
 Add this line to your application's `Gemfile`:
 
     gem 'scrivito_linklist_widget'
-    gem 'scrivito_advanced_editors'
 
-And then execute:
-
-    $ bundle
-    $ rake scrivito:migrate:install
-    $ rake scrivito:migrate
-    $ rake scrivito:migrate:publish
+## Customization
 
 The class Widget gives only simple styling. Feel free to override the view in your App to use costum styles. For example use font awesome for icons.
 
