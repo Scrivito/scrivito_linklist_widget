@@ -1,7 +1,7 @@
-<%= scrivito_details_for 'Show as CSS Class' do %>
-  <%= scrivito_toggle_button_editor(widget, :show_as_css) %>
+<%= scrivito_details_for 'Use link title as CSS class' do %>
+  <%= scrivito_tag(:div, widget, :show_as_css) %>
 <% end %>
 
 <%= scrivito_details_for 'Links' do %>
-  <%= scrivito_edit_linklist(widget, :links) %>
+  <%= scrivito_tag(:div, widget, :links) %>
 <% end %>

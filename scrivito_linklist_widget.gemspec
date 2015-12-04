@@ -12,11 +12,11 @@ Gem::Specification.new do |s|
   s.authors     = ["Scrivito"]
   s.email       = ["support@scrivito.com"]
   s.homepage    = "https://www.scrivito.com"
-  
+
   s.summary     = "Widget to show a link list as list with text or css class."
   s.description = "Widget to show a link list as list with text or css class."
   s.license     = "LGPL-3.0"
-  
+
   s.files = Dir[
     "{app,lib,scrivito}/**/*",
     "LICENSE",
@@ -24,8 +24,7 @@ Gem::Specification.new do |s|
   ]
 
   s.add_dependency 'bundler'
-  s.add_dependency 'scrivito_sdk'
-  s.add_dependency 'scrivito_advanced_editors'
+  s.add_dependency 'scrivito'
 
   s.add_development_dependency 'rake'
 end
