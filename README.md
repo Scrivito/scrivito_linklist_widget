@@ -1,6 +1,6 @@
 # scrivito_linklist_widget
 
-A Widget for Scrivito where a space between two widgets can be set by an editor.
+A Scrivito widget to insert a list of links. You can also use titles as CSS class to add additional styles.
 
 ## Installation
 
@@ -10,12 +10,30 @@ Add this line to your application's `Gemfile`:
 
 ## Customization
 
-The class Widget gives only simple styling. Feel free to override the view in your App to use costum styles. For example use font awesome for icons.
+Normaly the widget only renders a list of links. But you can set a CSS class for every list element and set more better styles. For example a list of round clickable links:
 
-## Contributing
+```
+ul li[class] {
+  float: left;
+}
 
-1. Fork it ( https://github.com/infopark/scrivito_space_widget/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+ul li[class] a {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-left: 5px;
+  background-color: blue;
+  display: block;
+}
+
+ul li.my_css_class a:before {
+  content: '$'; // also using icon fonts is possible
+  margin: 0 auto;
+  disply: block:
+  height: 20px;
+  width: 20px;
+  font-size: 20px;
+  line-height: 20px;
+  margin-top: 40px;
+}
+```
