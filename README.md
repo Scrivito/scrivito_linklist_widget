@@ -1,16 +1,16 @@
-# scrivito_linklist_widget
+# ScrivitoLinklistWidget
 
-A Scrivito widget to insert a list of links. You can also use titles as CSS class to add additional styles.
+A Scrivito widget for adding a list of links to a page. You can also use the titles of the individual links as CSS class names to style the links individually.
 
 ## Installation
 
-Add this line to your application's `Gemfile`:
+Add this line to your application's Gemfile:
 
     gem 'scrivito_linklist_widget'
 
 ## Customization
 
-Normaly the widget only renders a list of links. But you can set a CSS class for every list element and set more better styles. For example a list of round clickable links:
+Usually, the widget just renders a list of links. To apply the CSS classes mentioned above, define the classes, for example, as follows:
 
 ```
 ul li[class] {
