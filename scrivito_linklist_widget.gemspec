@@ -18,13 +18,10 @@ Gem::Specification.new do |s|
   s.license     = "LGPL-3.0"
 
   s.files = Dir[
-    "{app,lib,scrivito}/**/*",
+    "{app,lib}/**/*",
     "LICENSE",
     "Rakefile"
   ]
 
-  s.add_dependency 'bundler'
   s.add_dependency 'scrivito'
-
-  s.add_development_dependency 'rake'
 end
