@@ -8,11 +8,26 @@ Add this line to your application's Gemfile:
 
     gem 'scrivito_linklist_widget'
 
+## Localization
+
+The following code represents the default localization for English. Copy it to your `en.yml` and change it if necessary:
+
+```yaml
+en:
+  scrivito_linklist_widget:
+    thumbnail:
+      title: Linklist
+      description: Add a Linklist for your page.
+    details:
+      show_as_css: Use link title as CSS class
+      links: Links
+``
+
 ## Customization
 
 Usually, the widget just renders a list of links. To apply the CSS classes mentioned above, define the classes, for example, as follows:
 
-```
+```css
 ul li[class] {
   float: left;
 }
