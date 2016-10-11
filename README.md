@@ -44,7 +44,7 @@ ul li[class] a {
 ul li.my_css_class a:before {
   content: '$'; // also using icon fonts is possible
   margin: 0 auto;
-  disply: block:
+  display: block;
   height: 20px;
   width: 20px;
   font-size: 20px;
