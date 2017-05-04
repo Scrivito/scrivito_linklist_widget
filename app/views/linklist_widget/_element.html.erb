@@ -1,0 +1,7 @@
+<li class="<%= widget.show_as_css? ? link.title : '' %>">
+  <% if link.url %>
+    <%= link_to link.title, link.url %>
+  <% else %>
+    <%= link.title %>
+  <% end %>
+</li>

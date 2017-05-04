@@ -5,3 +5,11 @@
 <%= scrivito_details_for t('scrivito_linklist_widget.details.links', default: 'Links') do %>
   <%= scrivito_tag(:div, widget, :links) %>
 <% end %>
+
+<%= scrivito_details_for t('scrivito_linklist_widget.details.show_in_row', default: 'Show lists elems in a row') do %>
+  <%= scrivito_tag(:div, widget, :show_in_row) %>
+<% end %>
+
+<%= scrivito_details_for t('scrivito_linklist_widget.details.styles', default: 'Styles') do %>
+  <%= scrivito_tag :div, widget, :styles, data: {multi_select_list: widget.scrivito_selectable_style_classes} %>
+<% end %>

@@ -1,13 +1,8 @@
-<ul>
+<ul class="scrivito-linklist-widget <%= widget.styles.join(' ') %> <%= widget.show_in_row? ? 'clearfix list-inline' : '' %> <%= widget.show_as_css? ? 'list-with-css' : '' %>">
+  <% if widget.links.empty? %>
+    <div class="alert alert-warning">No links. Add one in the details view.</div>
+  <% end %>
   <% widget.links.each do |link| %>
-    <% if widget.show_as_css == "Yes" %>
-      <li class="<%= link.title %>"><%= link_to "", link.url %></li>
-    <% else %>
-      <% if link.url %>
-        <li><%= link_to link.title, link.url %></li>
-      <% else %>
-        <li><%= link.title %></li>
-      <% end %>
-    <% end %>
+    <%= render('linklist_widget/element', link: link, widget: widget) %>
   <% end %>
 </ul>
