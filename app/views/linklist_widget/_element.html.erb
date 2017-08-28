@@ -1,7 +1,3 @@
 <li class="<%= widget.show_as_css? ? link.title : '' %>">
-  <% if link.url %>
-    <%= link_to link.title, link.url %>
-  <% else %>
-    <%= link.title %>
-  <% end %>
+  <%= link_to link.title, link.external? ? link.url : scrivito_path(link.obj), target: link.target %>
 </li>
